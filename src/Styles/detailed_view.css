@@ -1,0 +1,254 @@
+/* Event Details Section */
+.event-details {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* Event Card Styling */
+.event-card {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(128, 128, 128, 0.304);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px; /* Adjust padding to prevent hidden elements */
+  overflow: visible; /* Ensure nothing is clipped */
+  color: #ffd700;
+  border: 2px solid gold;
+  position: relative; /* Ensure proper stacking context */
+}
+
+/* Event Title */
+.event-title {
+  font-size: 2.5rem; /* Ensure the title is prominent */
+  font-weight: bold;
+  text-align: center;
+  color: #ffd700;
+  margin: 20px 0; /* Add proper spacing around the title */
+  padding: 10px 0; /* Ensure space within the title area */
+  overflow: visible; /* Make sure nothing overflows */
+  z-index: 1; /* Bring the title to the foreground if layered under other elements */
+}
+
+/* New Container (Flex Container for Poster and Text) */
+.new-container {
+  width: 100%; /* Ensure it takes full width of the card */
+  background-color: rgba(218, 165, 32, 0.774); /* Gold background */
+  color: #212529; /* Dark grey text */
+  border-radius: 10px;
+  margin: 0 auto 20px auto; /* Auto center with some margin at the bottom */
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid white;
+  transition: transform 0.3s ease;
+  box-sizing: border-box; /* Ensure padding and border don't push out the width */
+}
+
+.new-container:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Poster Container */
+.poster-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%; /* Flexibly scale width */
+}
+
+.poster-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Container */
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.content-container p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Event Info Section */
+.event-info {
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #ffd700;
+}
+
+.event-info strong {
+  color: #ffffff; /* White text for emphasis */
+}
+
+/* Register Button Styling */
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the button and contact info to the left */
+  margin-top: 20px;
+}
+
+.registration {
+  margin-bottom: 15px; /* Space between button and contact info */
+}
+
+.registration a {
+  display: inline-block;
+  background-color: #ffd700; /* Gold background */
+  color: #212529; /* Dark text color */
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.registration a:hover {
+  background-color: rgba(255, 217, 0, 0.393); /* Slightly darker gold on hover */
+}
+
+/* Contact Information Styling */
+.contact-info {
+  font-size: 1rem;
+  color: #ffd700;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Prizes Container */
+.prizes-container {
+  background-color: rgba(128, 128, 128, 0.3); /* Light grey background for the container */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.prizes {
+  text-align: center;
+  color: #ffd700;
+}
+
+.prizes h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.prize-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure wrapping in smaller screens */
+}
+
+.prize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #212529;
+  padding: 10px;
+  text-align: center;
+}
+
+.prize span {
+  font-size: 2.5rem;
+}
+
+.prize gold {
+  color: gold;
+}
+
+.prize silver {
+  color: silver;
+}
+
+.prize bronze {
+  color: #cd7f32; /* Bronze color */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .new-container {
+    flex-direction: column; /* Stack poster and content vertically */
+    text-align: center;
+    gap: 10px;
+  }
+
+  .poster-container {
+    width: 100%; /* Make the poster take full width */
+  }
+
+  .poster-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-container {
+    padding: 0; /* Remove extra padding */
+  }
+
+  .content-container p {
+    text-align: center;
+  }
+
+  .event-title {
+    font-size: 2rem; /* Slightly smaller font for title */
+  }
+
+  .event-info {
+    font-size: 1rem;
+  }
+
+  .registration a {
+    padding: 10px 20px; /* Reduce button size */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card {
+    padding: 20px; /* Reduce padding for small screens */
+  }
+
+  .event-title {
+    font-size: 1.8rem; /* Further reduce title size */
+  }
+
+  .event-info {
+    font-size: 0.9rem; /* Slightly smaller info text */
+  }
+
+  .registration a {
+    font-size: 0.9rem;
+    padding: 8px 15px; /* Adjust button size */
+  }
+}

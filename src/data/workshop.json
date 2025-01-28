@@ -1,0 +1,19 @@
+{   
+  "Tech Debate": {
+    "date": "SEP 9",
+    "venue" : "CS LAB 8",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at molestiae ex suscipit quos pariatur saepe eos voluptatem quae similique quisquam expedita omnis debitis illum, assumenda doloremque non labore accusantium placeat aliquid ipsum? Voluptas quibusdam harum saepe deserunt molestias cumque eius accusantium ratione nisi magni. Corrupti minus ut quibusdam maxime laborum necessitatibus quisquam tenetur et debitis, quos, earum aspernatur ullam esse odio ad. Deleniti sint omnis possimus ipsum! Sequi, sapiente ducimus iure nam ipsa totam mollitia soluta perspiciatis eaque maxime, fugit porro veniam dignissimos. Minima nesciunt quidem eligendi. Cupiditate aliquid nesciunt exercitationem ipsam. Libero asperiores natus reiciendis facere eum quos.",
+    "time": "10:00 AM - 11:00 AM",
+    "image": "./src/assets/images/srilekha.jpeg",
+    "prize":{
+        "Winner":2000,
+        "Runner Up":1500,
+        "2nd Runner Up":1000
+    },
+    "contact":{
+        "Srilekha":"+91 0123456789",
+        "Praveen":"+91 0123456789"
+    },
+    "form":"link"
+  }
+}

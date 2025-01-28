@@ -1,0 +1,40 @@
+{
+  "sponsers": [
+    {
+      "name": "Temenos",
+      "logo": "./src/assets/sponsors/temenos.jpg",
+      "url": "https://www.temenos.com/"
+    },
+    {
+      "name": "Indium",
+      "logo": "./src/assets/sponsors/indium.jpg",
+      "url": "https://www.indiumsoftware.com/"
+    },
+    {
+      "name": "Jana Small Finance Bank",
+      "logo": "./src/assets/sponsors/janasmall.jpg",
+      "url": "https://www.janabank.com/"
+    },
+    {
+      "name": "Kauvery Hospital",
+      "logo": "./src/assets/sponsors/kauvery.jpg",
+      "url": "https://www.kauveryhospital.com/"
+    },
+    { "name": "TNPL", "logo": "./src/assets/sponsors/tnpl.jpg", "url": "https://www.tnpl.com/" },
+    {
+      "name": "Glooft",
+      "logo": "./src/assets/sponsors/glooft.jpg",
+      "url": "https://www.glooft.com/"
+    },
+    {
+      "name": "Interlace",
+      "logo": "./src/assets/sponsors/interlace.jpg",
+      "url": "https://www.interlaceindia.com/"
+    },
+    {
+      "name": "MotorQ",
+      "logo": "./src/assets/sponsors/motorq.jpg",
+      "url": "https://www.motorq.com/"
+    }
+  ]
+}

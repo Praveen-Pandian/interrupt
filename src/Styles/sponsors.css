@@ -1,0 +1,91 @@
+/* Container Styling */
+.sponsors-container {
+  text-align: center;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sponsors-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: goldenrod;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Grid Styling */
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  gap: 20px; /* Space between items */
+  justify-items: center;
+}
+
+/* Card Styling */
+.sponsor-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-card:hover {
+  transform: scale(1.05);
+}
+
+/* Consistent Image Sizing */
+.sponsor-card img {
+  width: 100%; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fills the area */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.sponsor-card p {
+  font-size: 1rem;
+  color: goldenrod;
+  margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    gap: 15px;
+  }
+  .sponsor-card {
+    width: 80%;
+  }
+  .sponsors-container {
+    width: 100%;
+  }
+  .sponsors-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .sponsor-card img {
+    width: 100%; /* Same fixed height */
+  }
+
+  .sponsors-container h1 {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+}
